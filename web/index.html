@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spy Fox in Dry Cereal</title>
+  <style>
+    body{margin:0;background:#101724;color:#dfe6ed;font:14px system-ui,sans-serif;
+         display:flex;min-height:100dvh;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+    #canvas{width:min(94vw,calc(94dvh*4/3));aspect-ratio:4/3;background:#000;
+            image-rendering:pixelated;touch-action:none;outline:none}
+    button{font:inherit;font-size:15px;padding:10px 22px;background:#efad48;color:#19222c;border:0;border-radius:6px;cursor:pointer}
+    #status{font-size:12px;color:#99adbe;min-height:1em}
+    #error{color:#ff9b9b;max-width:80vw;white-space:pre-wrap}
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="640" height="480" tabindex="0"></canvas>
+  <button id="start">Start</button>
+  <div id="status" aria-live="polite"></div>
+  <div id="error" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
